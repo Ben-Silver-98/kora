@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pre-order KORA containers or get in touch with the team. Be first when stock drops.">
+  <meta name="description" content="Pre-order KORA containers or get in touch with the team. Stock is limited at launch.">
   <meta property="og:title" content="Order — KORA">
-  <meta property="og:description" content="Pre-order KORA containers or get in touch. Be first when stock drops.">
+  <meta property="og:description" content="Pre-order KORA containers or get in touch. Stock is limited at launch.">
   <meta property="og:type" content="website">
   <title>Order — KORA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -41,186 +41,188 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero" aria-label="Order page header">
-    <div class="container">
-      <h1 class="fade-in">Get in early.</h1>
-      <p class="page-hero__sub fade-in">Pre-order your KORA system now, or drop us a message. Stock is limited at launch.</p>
-    </div>
-  </section>
+  <main>
 
-  <!-- ORDER + CONTACT FORMS -->
-  <section class="section" aria-label="Pre-order and contact forms">
-    <div class="container">
-      <div class="order-layout">
-
-        <!-- PRE-ORDER FORM -->
-        <div class="order-section fade-in">
-          <h2>Pre-order</h2>
-          <p class="order-section__intro">Reserve your KORA system before stock drops. We'll confirm your order and send payment details ahead of the launch date.</p>
-
-          <form id="form-preorder" novalidate aria-label="Pre-order form">
-
-            <div class="form-group">
-              <label class="form-label" for="preorder-name">Full name</label>
-              <input
-                type="text"
-                id="preorder-name"
-                name="name"
-                class="form-control"
-                placeholder="Alex Johnson"
-                required
-                autocomplete="name"
-                aria-required="true"
-              >
-              <span class="form-error" data-error="preorder-name" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="preorder-email">Email address</label>
-              <input
-                type="email"
-                id="preorder-email"
-                name="email"
-                class="form-control"
-                placeholder="your@email.com"
-                required
-                autocomplete="email"
-                aria-required="true"
-              >
-              <span class="form-error" data-error="preorder-email" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="preorder-product">Product</label>
-              <select
-                id="preorder-product"
-                name="product"
-                class="form-control"
-                required
-                aria-required="true"
-              >
-                <option value="" disabled selected>Select a product…</option>
-                <option value="750ml">KORA 750 ml — £14.99</option>
-                <option value="1l">KORA 1 L — £16.99</option>
-                <option value="3pack">KORA 3-Pack — £39.99</option>
-                <option value="starter">KORA Starter Kit — £79.99</option>
-              </select>
-              <span class="form-error" data-error="preorder-product" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="preorder-qty">Quantity</label>
-              <select
-                id="preorder-qty"
-                name="quantity"
-                class="form-control"
-                required
-                aria-required="true"
-              >
-                <option value="" disabled selected>How many?</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5+">5 or more</option>
-              </select>
-              <span class="form-error" data-error="preorder-qty" role="alert"></span>
-            </div>
-
-            <button type="submit" class="btn btn-accent" style="width:100%;margin-top:var(--spacing-xs);">
-              Reserve My Order
-            </button>
-
-          </form>
-
-          <div class="form-confirmation" id="confirm-preorder" tabindex="-1" role="status">
-            <p>Order reserved. We'll be in touch within 24 hours to confirm your slot and next steps.</p>
-          </div>
-        </div>
-
-        <!-- CONTACT FORM -->
-        <div class="order-section fade-in">
-          <h2>Get in touch</h2>
-          <p class="order-section__intro">Questions about the product, bulk orders, or press enquiries — drop us a line and we'll get back to you fast.</p>
-
-          <form id="form-contact" novalidate aria-label="Contact form">
-
-            <div class="form-group">
-              <label class="form-label" for="contact-name">Your name</label>
-              <input
-                type="text"
-                id="contact-name"
-                name="name"
-                class="form-control"
-                placeholder="Alex Johnson"
-                required
-                autocomplete="name"
-                aria-required="true"
-              >
-              <span class="form-error" data-error="contact-name" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-email">Email address</label>
-              <input
-                type="email"
-                id="contact-email"
-                name="email"
-                class="form-control"
-                placeholder="your@email.com"
-                required
-                autocomplete="email"
-                aria-required="true"
-              >
-              <span class="form-error" data-error="contact-email" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-subject">Subject</label>
-              <select
-                id="contact-subject"
-                name="subject"
-                class="form-control"
-                required
-                aria-required="true"
-              >
-                <option value="" disabled selected>What's this about?</option>
-                <option value="product">Product question</option>
-                <option value="bulk">Bulk / wholesale order</option>
-                <option value="press">Press / media</option>
-                <option value="other">Something else</option>
-              </select>
-              <span class="form-error" data-error="contact-subject" role="alert"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-message">Message</label>
-              <textarea
-                id="contact-message"
-                name="message"
-                class="form-control"
-                placeholder="Tell us what's on your mind…"
-                required
-                aria-required="true"
-              ></textarea>
-              <span class="form-error" data-error="contact-message" role="alert"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width:100%;margin-top:var(--spacing-xs);">
-              Send Message
-            </button>
-
-          </form>
-
-          <div class="form-confirmation" id="confirm-contact" tabindex="-1" role="status">
-            <p>Message received. We'll reply within one working day.</p>
-          </div>
-        </div>
-
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Order page header">
+      <div class="container">
+        <h1 class="fade-in">Get in early.</h1>
+        <p class="page-hero__sub fade-in">Pre-order your KORA system now, or drop us a message. Stock is limited at launch.</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- FORMS -->
+    <section class="order-section" aria-label="Pre-order and contact forms">
+      <div class="container">
+        <div class="order-layout">
+
+          <!-- PRE-ORDER FORM -->
+          <div class="order-col fade-in">
+            <h2 class="order-col__heading">Pre-order</h2>
+            <p class="order-col__intro">Reserve your KORA system before stock drops. We'll confirm your order and send payment details ahead of the launch date.</p>
+
+            <form id="form-preorder" novalidate aria-label="Pre-order form">
+
+              <div class="form-group">
+                <label class="form-label" for="preorder-name">Full name</label>
+                <input
+                  type="text"
+                  id="preorder-name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Alex Johnson"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                >
+                <span class="form-error" data-error="preorder-name" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="preorder-email">Email address</label>
+                <input
+                  type="email"
+                  id="preorder-email"
+                  name="email"
+                  class="form-control"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                >
+                <span class="form-error" data-error="preorder-email" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="preorder-product">Product</label>
+                <select
+                  id="preorder-product"
+                  name="product"
+                  class="form-control"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>Select a product…</option>
+                  <option value="750ml">KORA 750 ml — £14.99</option>
+                  <option value="1l">KORA 1 L — £16.99</option>
+                  <option value="starter">KORA Starter Set — £44.99</option>
+                  <option value="fullweek">KORA Full Week Set — £89.99</option>
+                </select>
+                <span class="form-error" data-error="preorder-product" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="preorder-qty">Quantity</label>
+                <select
+                  id="preorder-qty"
+                  name="quantity"
+                  class="form-control"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>How many?</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5 or more</option>
+                </select>
+                <span class="form-error" data-error="preorder-qty" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn--full">Reserve My Set</button>
+
+            </form>
+
+            <div class="form-confirmation" id="confirm-preorder" tabindex="-1" role="status">
+              <p>Order reserved. We'll be in touch within 24 hours to confirm your slot and next steps.</p>
+            </div>
+          </div>
+
+          <hr class="order-divider" aria-hidden="true">
+
+          <!-- CONTACT FORM -->
+          <div class="order-col fade-in">
+            <h2 class="order-col__heading">Get in touch</h2>
+            <p class="order-col__intro">Questions about the product, bulk orders, or press enquiries — drop us a line and we'll get back to you fast.</p>
+
+            <form id="form-contact" novalidate aria-label="Contact form">
+
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Alex Johnson"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                >
+                <span class="form-error" data-error="contact-name" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email address</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-control"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                >
+                <span class="form-error" data-error="contact-email" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <select
+                  id="contact-subject"
+                  name="subject"
+                  class="form-control"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>What's this about?</option>
+                  <option value="product">Product question</option>
+                  <option value="bulk">Bulk / wholesale order</option>
+                  <option value="press">Press / media</option>
+                  <option value="other">Something else</option>
+                </select>
+                <span class="form-error" data-error="contact-subject" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Tell us what's on your mind…"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" data-error="contact-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn--full">Send Message</button>
+
+            </form>
+
+            <div class="form-confirmation" id="confirm-contact" tabindex="-1" role="status">
+              <p>Message received. We'll reply within one working day.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
@@ -228,10 +230,10 @@
       <div class="footer__grid">
         <div>
           <div class="footer__logo">KORA</div>
-          <p class="footer__tagline">One lid. Every meal.<br>No excuses.</p>
+          <p class="footer__tagline">One lid. Every meal. No excuses.</p>
         </div>
         <div>
-          <h4 class="footer__heading">Navigate</h4>
+          <p class="footer__col-heading">Navigate</p>
           <nav class="footer__nav" aria-label="Footer navigation">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
@@ -240,7 +242,7 @@
           </nav>
         </div>
         <div>
-          <h4 class="footer__heading">Follow</h4>
+          <p class="footer__col-heading">Follow</p>
           <div class="footer__socials">
             <a href="#" aria-label="KORA on Instagram">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
