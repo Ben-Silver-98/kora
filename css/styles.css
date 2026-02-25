@@ -1169,14 +1169,14 @@ select.form-control {
 .product-card__vol {
   font-size: 0.62em;
   font-weight: 400;
-  color: var(--stone);
+  color: var(--color-stone);
   letter-spacing: 0.04em;
   vertical-align: middle;
 }
 
 .product-card__saving {
   font-size: 0.72em;
-  color: var(--terra);
+  color: var(--color-terra);
   font-family: var(--font-body);
   font-weight: 400;
   margin-left: 8px;
